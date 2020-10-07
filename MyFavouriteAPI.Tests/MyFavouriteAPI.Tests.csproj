@@ -13,6 +13,7 @@
     <PackageReference Include="SpecFlow" Version="3.4.14" />
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.4.14" />
     <PackageReference Include="SpecFlow.NUnit" Version="3.4.14" />
+    <PackageReference Include="FluentAssertions" Version="5.10.3" />
   </ItemGroup>
 
   <ItemGroup>
@@ -25,5 +26,10 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FavouriteList.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Update="Features\FavouriteList.feature.cs">
+      <DependentUpon>FavouriteList.feature</DependentUpon>
+    </SpecFlowObsoleteCodeBehindFiles>
   </ItemGroup>
 </Project>
