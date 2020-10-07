@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <Folder Include="Features\" />
+    <Folder Include="StepDefinitions\" />
   </ItemGroup>
   <ItemGroup>
     <SpecFlowFeatureFiles Update="Features\FavouriteList.feature">
@@ -24,10 +25,5 @@
       <Generator>SpecFlowSingleFileGenerator</Generator>
       <LastGenOutput>FavouriteList.feature.cs</LastGenOutput>
     </SpecFlowFeatureFiles>
-  </ItemGroup>
-  <ItemGroup>
-    <SpecFlowObsoleteCodeBehindFiles Update="Features\FavouriteList.feature.cs">
-      <DependentUpon>FavouriteList.feature</DependentUpon>
-    </SpecFlowObsoleteCodeBehindFiles>
   </ItemGroup>
 </Project>
