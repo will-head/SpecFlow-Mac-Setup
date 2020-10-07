@@ -15,4 +15,19 @@
     <PackageReference Include="SpecFlow.NUnit" Version="3.4.14" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Features\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SpecFlowFeatureFiles Update="Features\FavouriteList.feature">
+      <Visible>False</Visible>
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FavouriteList.feature.cs</LastGenOutput>
+    </SpecFlowFeatureFiles>
+  </ItemGroup>
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Update="Features\FavouriteList.feature.cs">
+      <DependentUpon>FavouriteList.feature</DependentUpon>
+    </SpecFlowObsoleteCodeBehindFiles>
+  </ItemGroup>
 </Project>
