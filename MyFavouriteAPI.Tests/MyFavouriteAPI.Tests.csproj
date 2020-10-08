@@ -15,10 +15,7 @@
     <PackageReference Include="SpecFlow.Tools.MsBuild.Generation" Version="3.4.14" />
   </ItemGroup>
 
-  <ItemGroup>
-    <!-- Without it Rider IDE will hide .feature files after project is built :) -->
-    <None Include="**/*.feature" />
-  </ItemGroup>
+
 
   <ItemGroup>
     <Folder Include="features\" />
@@ -33,5 +30,10 @@
     <SpecFlowObsoleteCodeBehindFiles Update="features\FavouriteList.feature.cs">
       <DependentUpon>FavouriteList.feature</DependentUpon>
     </SpecFlowObsoleteCodeBehindFiles>
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Without it Rider IDE will hide .feature files after project is built :) -->
+    <None Include="**/*.feature" />
   </ItemGroup>
 </Project>
