@@ -20,4 +20,18 @@
     <None Include="**/*.feature" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="features\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="features\FavouriteList.feature">
+      <Generator>SpecFlowSingleFileGenerator</Generator>
+      <LastGenOutput>FavouriteList.feature.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <SpecFlowObsoleteCodeBehindFiles Update="features\FavouriteList.feature.cs">
+      <DependentUpon>FavouriteList.feature</DependentUpon>
+    </SpecFlowObsoleteCodeBehindFiles>
+  </ItemGroup>
 </Project>
