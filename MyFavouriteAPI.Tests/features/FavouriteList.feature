@@ -1,11 +1,7 @@
-﻿Feature: Addition
-	In order to avoid silly mistakes
-	As a math idiot
-	I want to be told the sum of two numbers
-	
+﻿Feature: Favourite List
+    A simple favourite list that we can add or remove products in order to buy them later
+    
 @mytag
-Scenario: Add two numbers
-	Given I have entered 50 into the calculator
-	And I have entered 70 into the calculator
-	When I press add
-	Then the result should be 120 on the screen
+Scenario: Create a new favourite list
+    When I create a new favourite list
+    Then the favourite list should be created as empty
