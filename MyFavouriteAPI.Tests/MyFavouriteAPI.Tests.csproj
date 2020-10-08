@@ -12,4 +12,9 @@
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <!-- Without it Rider IDE will hide .feature files after project is built :) -->
+    <None Include="**/*.feature" />
+  </ItemGroup>
+
 </Project>
