@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <Folder Include="features\" />
+    <Folder Include="StepDefinitions\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="features\FavouriteList.feature">
@@ -26,12 +27,6 @@
       <LastGenOutput>FavouriteList.feature.cs</LastGenOutput>
     </None>
   </ItemGroup>
-  <ItemGroup>
-    <SpecFlowObsoleteCodeBehindFiles Update="features\FavouriteList.feature.cs">
-      <DependentUpon>FavouriteList.feature</DependentUpon>
-    </SpecFlowObsoleteCodeBehindFiles>
-  </ItemGroup>
-
   <ItemGroup>
     <!-- Without it Rider IDE will hide .feature files after project is built :) -->
     <None Include="**/*.feature" />
